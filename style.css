@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('38108f41-e2a8-494c-9d3b-2a93aed667d2.png') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Blur overlay for background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: inherit;
+  background-size: cover;
+  filter: blur(8px) brightness(0.7);
+  z-index: -1;
+}
+
+/* Container for aligning sections */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section styling */
+section {
+  padding: 40px 0;
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Project cards background transparent */
+.project {
+  background: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+
+header {
+  background-color: #4A90E2; /* lighter blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #cce6ff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer with lighter blue background */
+footer {
+  background: #4A90E2; /* lighter blue */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+/* Ensure body and html fill viewport height so footer is at bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > footer {
+  margin-top: auto; /* Push footer to bottom */
+}
+
+/* Contact links light blue */
+#contact a {
+  color: #ADD8E6; /* light blue */
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #7EC8E3;
+}
